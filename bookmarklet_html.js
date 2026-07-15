@@ -67,7 +67,7 @@ function read_page(){
         get_text_from_node(astory_message);
         output_html +=  '</div>'
         const insert_child = '<div style="padding:2rem;background-color:#b0f1ae;border:2px solid #095506;border-left:5px solid #095506;" id="id_parse_links">'+
-            '<div style="padding:0.2rem;background-color:#fff;border:2px solid #000;">v clipboardu bude zkopirovany text</div>' +
+            '<div style="padding:0.2rem;background-color:#fff;border:2px solid #000;">v clipboardu bude zkopirovany post jako jednoduchy html kod</div>' +
             '<div style="padding:1rem"></div>' +
             output_html+
             '</div>'
