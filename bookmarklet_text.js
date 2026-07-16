@@ -41,7 +41,7 @@ function copyTextToClipboard(text) {
       }
 
       if (node.nodeType==Node.TEXT_NODE ) {
-        output_text += node.nodeValue
+        output_text += node.nodeValue + "\n"
         output_html += node.nodeValue + '</div><div>'          
         return true  }
       else if (node.nodeName=="A" ) {      
