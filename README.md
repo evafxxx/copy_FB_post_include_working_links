@@ -60,12 +60,12 @@
 2. prispevek se otevre samostatne - pote jen tuknete na zalozku "copy from FB" (nebo jak jste si ji pojmenovali)
    
   Pr.
-  
-     ![priklad](/images/example.png)
+    
+   ![priklad](/images/example.png)
      
    po kliknuti na zalozku "Copy from FB"
    
-     ![priklad](/images/example1.png)
+   ![priklad](/images/example1.png)
      
    v clipboardu bude pote cely post
 
