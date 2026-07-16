@@ -1,4 +1,4 @@
-javascript%3A(function()%7Bfunction%20callback()%7B%7Dvar%20s%3Ddocument.createElement(%22script%22);
+javascript:(function()%7Bfunction%20callback()%7B%7Dvar%20s%3Ddocument.createElement(%22script%22);
 s.src%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fevafxxx%2Fcopy_FB_post_include_working_links%2Fbookmarklet_text.js%22;
 if(s.addEventListener)%7Bs.addEventListener(%22load%22%2Ccallback%2Cfalse)%7Delse%20if(s.readyState)%7Bs.onreadystatechange%3Dcallback%7Ddocument.body.appendChild(s);
 %7D)()
