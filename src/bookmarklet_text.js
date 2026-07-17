@@ -41,12 +41,21 @@ function copyTextToClipboard(text) {
         return true  }
       else if (node.nodeName=="A" ) {      
           const ahref = node.href;
-          const aurl_params = new URLSearchParams(ahref.split('?').slice(1).join('?'));
-          const aparams = Object.fromEntries(aurl_params.entries());
-          if (typeof aparams['u']!=='undefined') {
+          let as_param = false;
+          if (ahref.split('?').length > 1) {
+            const aurl_params = new URLSearchParams(ahref.split('?').slice(1).join('?'));
+            const aparams = Object.fromEntries(aurl_params.entries());
+            if (typeof aparams['u']!=='undefined') {
               output_text += aparams['u'] + "\n"
               output_html += '<a href="'+aparams['u']+'" target="_blank">'+aparams['u'] + '</a>'          
+              as_param = true;
+            } 
           }
+          if (!as_param) {
+              output_text += ahref + "\n"
+              output_html += '<a href="'+ahref+'" target="_blank">'+ahref + '</a>'          
+            
+          }        
           return true;
       } else {
         node.childNodes.forEach(anode=>{get_text_from_node(anode )})
